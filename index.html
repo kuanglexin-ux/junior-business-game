@@ -109,6 +109,7 @@
   @media (max-width:480px){ #res-table,#final-rank{font-size:13px} }
   td,th{padding:8px 4px;border-bottom:1px dashed var(--line)}
   td:last-child,th:last-child{text-align:right;font-weight:700;white-space:nowrap}
+  #final-table td:last-child,#verify-table td:last-child{white-space:normal}
   td.neg{color:var(--red)}
   td.pos{color:var(--green)}
   th{text-align:left;color:var(--muted);font-size:13px}
@@ -778,10 +779,10 @@ const KDS = {
 /* 演示口径：以下都是单机版演示用的参数，可以按实际需求调整 */
 const SIM = { rounds: 1 };
 const BOTS = [
-  {id:"bot1", name:"稳稳", nameEn:"Steady", emoji:"🐢", hq:"Beijing", vol:16500, salary:4050, quality:250000, agents:{London:1, Beijing:2, Nairobi:0}, marketing:250000, report:false, priceMul:0.98, style:"四平八稳，什么都来一点", styleEn:"Steady all-rounder"},
-  {id:"bot2", name:"冲冲", nameEn:"Dash", emoji:"🚀", hq:"London",  vol:12000, salary:4500, quality:400000, agents:{London:2, Beijing:1, Nairobi:0}, marketing:500000, report:true,  priceMul:0.90, style:"猛冲量、低价抢人", styleEn:"Big volume, low prices to win customers"},
-  {id:"bot3", name:"省省", nameEn:"Saver", emoji:"🐷", hq:"Nairobi", vol:5600,  salary:3800, engFactor:0.8, quality:0,      agents:{London:0, Beijing:0, Nairobi:1}, marketing:0,      report:false, priceMul:1.05, style:"能省就省，不打广告", styleEn:"Saves wherever possible, no ads"},
-  {id:"bot4", name:"贵贵", nameEn:"Royal", emoji:"👑", hq:"Beijing", vol:12000, salary:4200, quality:600000, agents:{London:1, Beijing:2, Nairobi:1}, marketing:400000, report:true,  priceMul:1.08, style:"走高端，质量拉满、卖得贵", styleEn:"Premium style: top quality, high prices"}
+  {id:"bot1", name:"稳稳", nameEn:"Steady", emoji:"🐢", hq:"Beijing", vol:16500, salary:4050, quality:250000, agents:{London:1, Beijing:1, Nairobi:0}, marketing:250000, report:false, priceMul:1.20, style:"四平八稳，什么都来一点", styleEn:"Steady all-rounder"},
+  {id:"bot2", name:"冲冲", nameEn:"Dash", emoji:"🚀", hq:"London",  vol:20000, salary:4500, quality:300000, agents:{London:1, Beijing:1, Nairobi:0}, marketing:400000, report:false, priceMul:1.10, style:"猛冲量、平价抢份额", styleEn:"Big volume, fair prices to win share"},
+  {id:"bot3", name:"省省", nameEn:"Saver", emoji:"🐷", hq:"Nairobi", vol:5600,  salary:3800, engFactor:0.8, quality:0,      agents:{London:0, Beijing:0, Nairobi:1}, marketing:0,      report:false, priceMul:1.30, style:"能省就省，不打广告", styleEn:"Saves wherever possible, no ads"},
+  {id:"bot4", name:"贵贵", nameEn:"Royal", emoji:"👑", hq:"Beijing", vol:12000, salary:4200, quality:600000, agents:{London:1, Beijing:1, Nairobi:0}, marketing:400000, report:true,  priceMul:1.70, style:"走高端，质量拉满、卖得贵", styleEn:"Premium style: top quality, high prices"}
 ];
 const GAME = {
 
